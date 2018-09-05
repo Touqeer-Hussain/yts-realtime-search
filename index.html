@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YTS | Search</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+       <nav>
+    <div class="nav-wrapper teal blue-grey darken-4">
+      <a href="#" class="brand-logo right"><img src="./images/logo-YTS.svg"></a>
+      
+    </div>
+  </nav>
+  
+          <div class="row">
+            <div class="input-field col s12 l6 m7">
+              <i class="material-icons prefix">search</i>
+              <input id="searchQuery" type="text" class="validate" oninput="home();">
+              <label for="searchQuery">Search (Movie Title, Actor Name, IMDb code)</label>
+            </div>
+            
+        <div class="input-field col s12 l6 m5">
+            <i class="material-icons prefix">sort</i>
+            <select id='genreList' onchange="home();">
+              <option value="" disabled selected>Choose your Genere</option>
+  
+            </select>
+            <label >Genere</label>
+          </div>
+          </div>
+          
+          
+          
+    <div class="container row" id="mList">
+          
+    </div>
+    
+    <div class='container' id="more">
+
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
+      
